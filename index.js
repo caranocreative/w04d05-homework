@@ -1,4 +1,10 @@
 const car = require ('./car');
 
 
-console.log(car.speed);
+
+car.convertible.accelerate(10);
+car.convertible.deceleration(1);
+
+
+
+

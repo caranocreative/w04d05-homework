@@ -1,24 +1,20 @@
 
 
-const car = module.exports ={
-	color = 'blue',
-	convertible = true,
-	speed = 0,
-	
+module.exports.convertible = {
+	color:'blue',
+	convertible: true,
+	speed: 0,
+
+	accelerate: function(speed)  {
+		console.log(this.speed + " old speed");
+		this.speed += speed;
+		console.log(this.speed + " new speed");
+	},
+
+	deceleration: function(speed) {
+		console.log(this.speed + " old speed");
+		this.speed -= speed;
+		console.log(this.speed + " new speed");
+	}
 };
 
-
-accelerate() {
-	console.log(this.speed + " old speed");
-	this.speed += 20;
-	console.log(this.speed + " new speed")
-
-},
-decelerate() {
-	console.log(this.speed + " old speed");
-	this.speed -= 5;
-	console.log(this.speed + " new speed")
-
-},
-car.accelerate();
-car.decelerate();
